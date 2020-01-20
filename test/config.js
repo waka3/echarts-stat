@@ -10,7 +10,7 @@ require.config({
         },
         {
             main: 'echarts',
-            location: '../../echarts/dist',
+            location: '../src',
             name: 'echarts'
         },
         {

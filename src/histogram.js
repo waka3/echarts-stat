@@ -33,7 +33,7 @@ define(function (require) {
         var minValue = min(values);
         var binsNumber = threshold(values, minValue, maxValue);
         var step = tickStep(minValue, maxValue, binsNumber);
-        var precision = -Math.floor(Math.log(Math.abs(maxValue - minValue) / binsNumber) / Math.LN10);
+        var precision = Math.floor(Math.log(Math.abs(maxValue - minValue) / binsNumber) / Math.LN10);
         
         // return the xAxis coordinate for each bins, except the end point of the value
         var rangeArray = range(
